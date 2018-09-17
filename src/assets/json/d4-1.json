@@ -1,0 +1,26 @@
+{
+	"StateCode": 1,
+	"Message": "",
+	"Data": {
+		"Id": "131698758566247222",
+		"HouseNo": "450105004002GB00035F00030141",
+		"HouseArea": "97.59",
+		"HouseAddress": "南宁市江南区金凯路32号宏桂·宏苑6号楼2905号",
+		"HousePaperNo": "桂(1231)南宁市不动产证明第1231231号",
+		"Owners": [{
+			"Name": "吕俊宏",
+			"IDType": "身份证",
+			"PersonNo": "450821198707135810",
+			"MobileNo": "18775622123",
+			"CertNo": "桂(2016)南宁市不动产证明第0088237号",
+			"RoleName": "义务人",
+			"OwnerType": "个人",
+			"Keeper": false
+		}],
+		"Success": true,
+		"ErroMessage": null,
+		"CurrentMortgageInfo": null,
+		"SalesInfo": null,
+		"ParcelCert": null
+	}
+}

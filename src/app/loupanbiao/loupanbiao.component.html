@@ -1,0 +1,221 @@
+<app-navbar></app-navbar>
+<div class="material-background"></div>
+<div class="container container-full mt-4 flow-line">
+  <div class='breadcrumbs'>
+    <div class='inner'>
+      <ul class='cf'>
+        <li><a><span class="index">1</span><span>信息校验</span></a></li>
+        <li><a class='active'><span>2</span><span>填写抵押合同信息</span></a></li>
+        <li><a><span>3</span><span>提交审核</span></a></li>
+        <li><a><span>4</span><span>打印贴签</span></a></li>
+        <li><a><span>5</span><span>预约办理</span></a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<div class=" container-fluid  ">
+
+  <div class="card nav-tabs-ver-container">
+
+    <div class="card-header mb-0 clearfix loupanheader">
+      <div class="card pull-left card-warning-inverse">
+        <div class="card-block pt-20">
+          已选中0个房屋
+        </div>
+      </div>
+      <div class="card pull-left card-light-inverse ml-2">
+        <div class="card-block">
+          不可申请
+        </div>
+      </div>
+      <div class="card pull-left card-dark-inverse ml-2">
+        <div class="card-block">
+          已提交申请
+        </div>
+      </div>
+      <div class="card pull-left card-primary-inverse ml-2">
+        <div class="card-block">
+          已选择
+        </div>
+      </div>
+      <div class="card pull-left card card-info-inverse ml-2">
+        <div class="card-block">
+          可申请，已预告登记
+        </div>
+      </div>
+      <div class="card pull-left card-royal-inverse ml-2">
+        <div class="card-block">
+          可申请，需录入申请人信息
+        </div>
+      </div>
+      <div class="checkbox ml-4">
+        <label class="ml-4">
+          <input type="checkbox"> 显示权利人
+        </label>
+        <label>
+          <input type="checkbox"> 显示用途
+        </label>
+        <label>
+          <input type="checkbox"> 显示面积
+        </label>
+      </div>
+    </div>
+    <!--<div style="background-color:#eee;"  class="col-md-12">
+
+    </div>-->
+    <div class="card-block row">
+      <div class="col-md-2">
+        <ul class="nav nav-tabs-ver nav-tabs-ver-primary" role="tablist">
+          <li role="presentation" class="tab-active active tiao bl" *ngFor="let bt of DATA" (click)="dong(bt.Location)">
+            <a aria-controls="home" role="tab" data-toggle="tab">
+              {{bt.Location}}
+              <span class="badge badge-success pull-right">14</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--<div class="col-md-10 nav-tabs-ver-container-content">-->
+      <!--<div class="card-block">-->
+      <!--<div class="row">-->
+      <!--<div class="checkbox ml-4 pull-right">-->
+      <!--<label class="ml-4">-->
+      <!--<input type="checkbox" checked> 全部显示-->
+      <!--</label>-->
+      <!--<label class="">-->
+      <!--<input type="checkbox"> 隐藏不可申请-->
+      <!--</label>-->
+      <!--<label class="color-info">-->
+      <!--<input type="checkbox"> 已选择-->
+      <!--</label>-->
+      <!--<label class="color-primary">-->
+      <!--<input type="checkbox"> 全选可申请，已预告登记-->
+      <!--</label>-->
+      <!--<label class="color-success">-->
+      <!--<input type="checkbox"> 可申请，需录入申请人信息-->
+      <!--</label>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--<div class="tab-content table-responsive">-->
+      <!--<div role="tabpanel" class="tab-pane active my-table" id="home">-->
+      <!--<div class="row" *ngFor="let c of c">-->
+      <!--<div class="my-cell">-->
+      <!--<div class="card floor-num">-->
+      <!--<div class="card-block">-->
+      <!--<p>{{c.FloorNo}}</p>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--<div style="float: left" *ngFor="let he of he">-->
+      <!--<div class="my-cell" *ngIf="he.FloorNo == c.FloorNo">-->
+      <!--<div class="card card-light-inverse">-->
+      <!--<div class="card-block">-->
+      <!--<p style="white-space: normal">{{he.BDCAddress}}</p>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--<div role="tabpanel" class="tab-pane" id="profile">-->
+      <!--2222-->
+      <!--</div>-->
+      <!--<div role="tabpanel" class="tab-pane" id="messages">-->
+      <!--.33333..-->
+      <!--</div>-->
+      <!--<div role="tabpanel" class="tab-pane" id="settings">-->
+      <!--.34444..-->
+
+      <!--</div>-->
+      <!--</div>-->
+
+
+      <!--</div>-->
+      <!--<router-outlet></router-outlet>-->
+      <!--</div>-->
+      <div class="col-md-10 nav-tabs-ver-container-content">
+        <div class="card-block" style="height: 500px;overflow-y: scroll;width: 100%;overflow-x: scroll">
+          <div class="row">
+            <div class="checkbox ml-4 pull-right">
+              <label class="ml-4">
+                <input type="checkbox" checked> 全部显示
+              </label>
+              <label class="">
+                <input type="checkbox"> 隐藏不可申请
+              </label>
+              <label class="color-info">
+                <input type="checkbox"> 已选择
+              </label>
+              <label class="color-primary">
+                <input type="checkbox"> 全选可申请，已预告登记
+              </label>
+              <label class="color-success">
+                <input type="checkbox"> 可申请，需录入申请人信息
+              </label>
+            </div>
+          </div>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+<!-- sb-site-container -->
+
+
+<!--<div class="ms-slidebar sb-slidebar sb-left sb-style-overlay" id="ms-slidebar">-->
+<!--<div class="sb-slidebar-container">-->
+<!--<header class="ms-slidebar-header">-->
+<!--<div class="ms-slidebar-login">-->
+<!--<a href="javascript:void(0)" class="withripple">-->
+<!--<i class="zmdi zmdi-account"></i> 登录-->
+<!--</a>-->
+<!--<a href="javascript:void(0)" class="withripple">-->
+<!--<i class="zmdi zmdi-account-add"></i> 注册-->
+<!--</a>-->
+<!--</div>-->
+<!--<div class="ms-slidebar-title">-->
+<!--<form class="search-form">-->
+<!--&lt;!&ndash;<input id="search-box-slidebar" type="text" class="search-input" placeholder="Search..." name="q" />&ndash;&gt;-->
+<!--<label for="search-box-slidebar">-->
+<!--<i class="zmdi zmdi-search"></i>-->
+<!--</label>-->
+<!--</form>-->
+<!--<div class="ms-slidebar-t">-->
+<!--<img class="ms-logo ms-logo-sm" />-->
+<!--<h3>-->
+<!--南宁市不动产登记综合服务平台-->
+
+<!--</h3>-->
+<!--</div>-->
+<!--</div>-->
+<!--</header>-->
+<!--<ul class="ms-slidebar-menu" id="slidebar-menu" role="tablist" aria-multiselectable="true">-->
+<!--<li class="panel" role="tab" id="sch1">-->
+<!--<a class="collapsed" role="button" data-toggle="collapse" data-parent="#slidebar-menu" href="#sc1" aria-expanded="false" aria-controls="sc1">-->
+<!--<i class="zmdi zmdi-home"></i> 首页-->
+<!--</a>-->
+
+<!--</li>-->
+<!--<li class="panel" role="tab" id="sch2">-->
+<!--<a class="collapsed" role="button" data-toggle="collapse" data-parent="#slidebar-menu" href="#sc2" aria-expanded="false" aria-controls="sc2">-->
+<!--<i class="zmdi zmdi-desktop-mac"></i> 业务查询-->
+<!--</a>-->
+
+<!--</li>-->
+<!--<li class="panel" role="tab" id="sch4">-->
+<!--<a class="collapsed" role="button" data-toggle="collapse" data-parent="#slidebar-menu" href="#sc4" aria-expanded="false" aria-controls="sc4">-->
+<!--<i class="zmdi zmdi-edit"></i> 个人中心-->
+<!--</a>-->
+
+<!--</li>-->
+
+<!--</ul>-->
+
+<!--</div>-->
+<!--</div>-->

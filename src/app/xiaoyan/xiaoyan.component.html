@@ -1,0 +1,205 @@
+<app-navbar></app-navbar>
+<div class="container mt-4">
+  <div class="breadcrumbs">
+    <div class='inner'>
+      <ul class='cf'>
+        <li><a class="active color-primary"><span class="">1</span><span>信息校验</span></a></li>
+        <li><a class=''><span class="color-primary-inverse">2</span><span>填写抵押合同信息</span></a></li>
+        <li><a><span class="">3</span><span>提交审核</span></a></li>
+        <li><a><span>4</span><span>打印贴签</span></a></li>
+        <li><a><span>5</span><span>预约办理</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card mb-1">
+    <div class="card-block">
+      <h4 class="color-primary">请先输入您的新建商品房首次登记信息进行数据检验 (已选业务: 新建商品房转移(b2) )[批量]</h4>
+    </div>
+  </div>
+  <!--<h3 class="color-primary">请先输入您的新建商品房首次登记信息进行数据检验 (已选业务: 新建商品房转移(b2) )[批量]</h3>-->
+
+  <div class="card">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs  shadow-2dp" role="tablist">
+      <li role="presentation" class="active"><a class="withoutripple" href="#home" aria-controls="home" role="tab"
+                                                data-toggle="tab"><i class="zmdi zmdi-home"></i> <span
+        class="">首次登记</span></a></li>
+      <li role="presentation"><a class="withoutripple" href="#profile" aria-controls="profile" role="tab"
+                                 data-toggle="tab"><i class="zmdi zmdi-account"></i> <span class="">权籍调查</span></a></li>
+
+    </ul>
+
+    <div class="card-block">
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade active in" id="home">
+          <form class="form-horizontal" [formGroup]="myForm" (ngSubmit)="postDate()">
+            <fieldset>
+              <div class="form-group">
+                <!--for="inputEmail"可以不用加 -->
+                <label for="inputEmail" class="col-md-2 control-label">首次登记业务号</label>
+
+                <div class="col-md-6">
+                  <!--id="inputEmail" 可以不用加-->
+                  <input type="text" class="form-control" name="name"  id="inputEmail" formControlName="inputEmail"
+                         maxlength="16"
+                         placeholder="办理新建商品房首次登记的不动产登记业务号">
+                </div>
+                <div class="col-md-3 hidden-xs">
+                  <span class="color-warning">如：2017010101</span>
+                </div>
+              </div>
+              <!--<div *ngIf="name.errors && (name.dirty || name.touched)"-->
+              <!--class="alert alert-danger">-->
+              <!--<div [hidden]="!name.errors.required">-->
+              <!--Name is required-->
+              <!--</div>-->
+              <!--<div [hidden]="!name.errors.minlength">-->
+              <!--Name must be at least 4 characters long.-->
+              <!--</div>-->
+              <!--<div [hidden]="!name.errors.maxlength">-->
+              <!--Name cannot be more than 24 characters long.-->
+              <!--</div>-->
+              <!--</div>-->
+              <div class="form-group">
+                <label for="inputPassword" class="col-md-2 control-label">证件号</label>
+
+                <div class="col-md-6">
+                  <!--[(ngModel)] ="name" #name="ngModel"-->
+                  <input type="text" name="name" class="form-control" id="inputPassword" formControlName="inputPassword"
+                         placeholder="开发企业办理首次登记时的社会统一信用代码或组织机构代码">
+                </div>
+                <div class="col-md-3 hidden-xs">
+                  <span class="color-warning">如：90000111MA4L16JQ9B</span>
+                </div>
+              </div>
+              <!--<div *ngIf="name.errors && (name.dirty || name.touched)"-->
+              <!--class="alert alert-danger">-->
+              <!--<div [hidden]="!name.errors.required">-->
+              <!--Name is required-->
+              <!--</div>-->
+              <!--<div [hidden]="!name.errors.minlength">-->
+              <!--Name must be at least 4 characters long.-->
+              <!--</div>-->
+              <!--<div [hidden]="!name.errors.maxlength">-->
+              <!--Name cannot be more than 24 characters long.-->
+              <!--</div>-->
+              <!--</div>-->
+              <div class="form-group">
+                <div class="col-md-10 col-md-offset-2">
+                  <button type="submit" (click)="golou()" class="btn btn-raised btn-primary" [disabled]="!myForm.valid">下一步</button>
+                  <a (click)="golist()" class="btn btn-danger">上一步</a>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="profile">
+          <form class="form-horizontal" [formGroup]="myid">
+            <fieldset>
+              <div class="form-group">
+                <label class="col-md-2 control-label">权籍调查编号</label>
+
+                <div class="col-md-6">
+                  <input type="text" class="form-control"  maxlength="7"  formControlName="inputemail"  placeholder="委托转移登记权籍调查的权籍调查成果表上的12位业务编号">
+                </div>
+                <div class="col-md-3 hidden-xs">
+                  <span class="color-warning">如：2017010101</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label  class="col-md-2 control-label">证件号</label>
+
+                <div class="col-md-6">
+                  <input type="text" class="form-control" formControlName="inputpassword" placeholder="开发企业办理首次登记时的社会统一信用代码或组织机构代码">
+                </div>
+                <div class="col-md-3 hidden-xs">
+                  <span class="color-warning">如：90000111MA4L16JQ9B</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-10 col-md-offset-2">
+                  <button type="submit"  (click)="golou()" class="btn btn-raised btn-primary" [disabled]="!myid.valid">下一步</button>
+                  <a (click)="golist()" class="btn btn-danger">上一步</a>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="material-background"></div>
+
+
+<!-- sb-site-container -->
+
+
+
+<!--<div class="ms-slidebar sb-slidebar sb-left sb-style-overlay" id="ms-slidebar">-->
+  <!--<div class="sb-slidebar-container">-->
+    <!--<header class="ms-slidebar-header">-->
+      <!--<div class="ms-slidebar-login">-->
+        <!--<a href="javascript:void(0)" class="withripple">-->
+          <!--<i class="zmdi zmdi-account"></i> 登录-->
+        <!--</a>-->
+        <!--<a href="javascript:void(0)" class="withripple">-->
+          <!--<i class="zmdi zmdi-account-add"></i> 注册-->
+        <!--</a>-->
+      <!--</div>-->
+      <!--<div class="ms-slidebar-title">-->
+        <!--<form class="search-form">-->
+          <!--&lt;!&ndash;<input id="search-box-slidebar" type="text" class="search-input" placeholder="Search..." name="q" />&ndash;&gt;-->
+          <!--<label for="search-box-slidebar">-->
+            <!--<i class="zmdi zmdi-search"></i>-->
+          <!--</label>-->
+        <!--</form>-->
+        <!--<div class="ms-slidebar-t">-->
+          <!--<img class="ms-logo ms-logo-sm"/>-->
+          <!--<h3>-->
+            <!--南宁市不动产登记综合服务平台-->
+
+          <!--</h3>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</header>-->
+    <!--<ul class="ms-slidebar-menu" id="slidebar-menu" role="tablist" aria-multiselectable="true">-->
+      <!--<li class="panel" role="tab" id="sch1">-->
+        <!--<a class="collapsed" role="button" data-toggle="collapse" data-parent="#slidebar-menu" href="#sc1"-->
+           <!--aria-expanded="false" aria-controls="sc1">-->
+          <!--<i class="zmdi zmdi-home"></i> 首页-->
+        <!--</a>-->
+
+      <!--</li>-->
+      <!--<li class="panel" role="tab" id="sch2">-->
+        <!--<a class="collapsed" role="button" data-toggle="collapse" data-parent="#slidebar-menu" href="#sc2"-->
+           <!--aria-expanded="false" aria-controls="sc2">-->
+          <!--<i class="zmdi zmdi-desktop-mac"></i> 业务查询-->
+        <!--</a>-->
+
+      <!--</li>-->
+      <!--<li class="panel" role="tab" id="sch4">-->
+        <!--<a class="collapsed" role="button" data-toggle="collapse" data-parent="#slidebar-menu" href="#sc4"-->
+           <!--aria-expanded="false" aria-controls="sc4">-->
+          <!--<i class="zmdi zmdi-edit"></i> 个人中心-->
+        <!--</a>-->
+
+      <!--</li>-->
+
+    <!--</ul>-->
+
+  <!--</div>-->
+<!--</div>-->
+
+
+
+
+
+<!--<div class="btn-back-top">-->
+<!--<a href="#" data-scroll id="back-top" class="btn-circle btn-circle-primary btn-circle-sm btn-circle-raised ">-->
+<!--<i class="zmdi zmdi-long-arrow-up"></i>-->
+<!--</a>-->
+<!--</div>-->

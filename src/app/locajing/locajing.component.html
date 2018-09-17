@@ -1,0 +1,24 @@
+<div class="tab-content">
+  <div>
+    <div role="tabpanel" class="tab-pane active my-table" id="home">
+      <div class="row" *ngFor="let c of c">
+        <div class="my-cell">
+          <div class="card floor-num">
+            <div class="card-block">
+              <p>{{c.FloorNo}}</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="my-cell he" *ngFor="let i of i">
+            <div class="card card-light-inverse yz" *ngIf="i.FloorNo == c.FloorNo">
+              <div class="card-block">
+                <p style="white-space: normal">{{i.BDCAddress}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

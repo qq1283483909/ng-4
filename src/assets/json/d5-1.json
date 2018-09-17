@@ -1,0 +1,102 @@
+{
+	"StateCode": 1,
+	"Message": "",
+	"Data": {
+		"测试01商业银行南宁支行": {
+			"Id": "131698762876227712",
+			"HouseNo": "450105002001GB00008F00030126",
+			"HouseArea": "64.92",
+			"HouseAddress": "南宁市江南区五一路109-1号恒宇国际公馆1号楼2105号",
+			"HousePaperNo": "测试01",
+			"Owners": [{
+				"Name": "雷健萍",
+				"IDType": "身份证",
+				"PersonNo": "450703199107021525",
+				"MobileNo": "18077120320",
+				"CertNo": null,
+				"RoleName": "义务人",
+				"OwnerType": "个人",
+				"Keeper": false
+			},
+			{
+				"Name": "李展城",
+				"IDType": "身份证",
+				"PersonNo": "452127198509103633",
+				"MobileNo": "13367613461",
+				"CertNo": null,
+				"RoleName": "义务人",
+				"OwnerType": "个人",
+				"Keeper": false
+			}],
+			"Success": true,
+			"ErroMessage": null,
+			"CurrentMortgageInfo": {
+				"MortCertNo": "桂(2016)南宁市不动产证明第0049431号",
+				"LoanStart": "\/Date(1472140800000)\/",
+				"LoanEnd": "\/Date(2103292800000)\/",
+				"LoanValue": 32.3,
+				"Mortgagee": {
+					"Name": "中国建设银行股份有限公司南宁园湖支行",
+					"IDType": "组织机构代码",
+					"PersonNo": "71142414-1",
+					"MobileNo": "5889603",
+					"CertNo": null,
+					"RoleName": "权利人",
+					"OwnerType": "企业",
+					"Keeper": true
+				},
+				"LoanProjectType": null
+			},
+			"SalesInfo": null,
+			"ParcelCert": null
+		},
+		"浿02商业银行南宁支行": {
+			"Id": "131698763676276620",
+			"HouseNo": "450105002001GB00008F00030167",
+			"HouseArea": "67.42",
+			"HouseAddress": "南宁市江南区五一路109-1号恒宇国际公馆1号楼2804号",
+			"HousePaperNo": "浿02",
+			"Owners": [{
+				"Name": "黄毓云",
+				"IDType": "身份证",
+				"PersonNo": "452723198406111216",
+				"MobileNo": "13737118678",
+				"CertNo": null,
+				"RoleName": "义务人",
+				"OwnerType": "个人",
+				"Keeper": false
+			},
+			{
+				"Name": "韦远岫",
+				"IDType": "身份证",
+				"PersonNo": "450326198507111229",
+				"MobileNo": "13737118678",
+				"CertNo": null,
+				"RoleName": "义务人",
+				"OwnerType": "个人",
+				"Keeper": false
+			}],
+			"Success": true,
+			"ErroMessage": null,
+			"CurrentMortgageInfo": {
+				"MortCertNo": "桂(2016)南宁市不动产证明第0048152号",
+				"LoanStart": "\/Date(1470672000000)\/",
+				"LoanEnd": "\/Date(2417356800000)\/",
+				"LoanValue": 35.5,
+				"Mortgagee": {
+					"Name": "中国建设银行股份有限公司南宁园湖支行",
+					"IDType": "组织机构代码",
+					"PersonNo": "71142414-1",
+					"MobileNo": "5889603",
+					"CertNo": null,
+					"RoleName": "权利人",
+					"OwnerType": "企业",
+					"Keeper": true
+				},
+				"LoanProjectType": null
+			},
+			"SalesInfo": null,
+			"ParcelCert": null
+		}
+	}
+}

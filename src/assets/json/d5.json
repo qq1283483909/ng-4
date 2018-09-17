@@ -1,0 +1,42 @@
+{
+	"StateCode": 1,
+	"Message": "",
+	"Data": {
+		"Id": "131698760446833123",
+		"HouseNo": "450107003011GB00149F00010322",
+		"HouseArea": "91.97",
+		"HouseAddress": "南宁市西乡塘区大学东路128号裕丰·荔园A单元1307号",
+		"HousePaperNo": "桂(1231)南宁市不动产证明第1231231号",
+		"Owners": [{
+			"Name": "王亚晶",
+			"IDType": "身份证",
+			"PersonNo": "142430198212221227",
+			"MobileNo": "",
+			"CertNo": "邕房权证字第02751874号",
+			"RoleName": "义务人",
+			"OwnerType": "个人",
+			"Keeper": false
+		}],
+		"Success": true,
+		"ErroMessage": null,
+		"CurrentMortgageInfo": {
+			"MortCertNo": "桂(2016)南宁市不动产证明第0047426号",
+			"LoanStart": "2014-05-13T00:00:00",
+			"LoanEnd": "2044-05-13T00:00:00",
+			"LoanValue": 46.2,
+			"Mortgagee": {
+				"Name": "中国工商银行股份有限公司南宁市新城支行",
+				"IDType": "组织机构代码",
+				"PersonNo": "70873993-5",
+				"MobileNo": "",
+				"CertNo": "桂(2016)南宁市不动产证明第0047426号",
+				"RoleName": "权利人",
+				"OwnerType": "企业",
+				"Keeper": false
+			},
+			"LoanProjectType": null
+		},
+		"SalesInfo": null,
+		"ParcelCert": null
+	}
+}

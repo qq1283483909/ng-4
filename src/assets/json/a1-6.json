@@ -1,0 +1,26 @@
+{
+	"StateCode": 1,
+	"Message": "",
+	"Data": {
+		"Id": "131698780325964033",
+		"HouseNo": "450103004006GB00129F00060713",
+		"HouseArea": "40.04",
+		"HouseAddress": "南宁市青秀区双拥路30号南湖名都广场地下室B3169号",
+		"HousePaperNo": "桂(1231)南宁市不动产权第1231231号",
+		"Owners": [{
+			"Name": "潘昌新",
+			"IDType": "身份证",
+			"PersonNo": "452424196411200070",
+			"MobileNo": "13321716788",
+			"CertNo": "桂(2017)南宁市不动产权第0000400号",
+			"RoleName": "义务人",
+			"OwnerType": "个人",
+			"Keeper": false
+		}],
+		"Success": true,
+		"ErroMessage": null,
+		"CurrentMortgageInfo": null,
+		"SalesInfo": null,
+		"ParcelCert": null
+	}
+}

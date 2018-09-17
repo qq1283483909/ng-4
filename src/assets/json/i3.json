@@ -1,0 +1,26 @@
+{
+	"StateCode": 1,
+	"Message": "",
+	"Data": {
+		"Id": "131698784909303800",
+		"HouseNo": "462881",
+		"HouseArea": "47.70",
+		"HouseAddress": "南宁市青秀区桂雅路1号南宁·联盟新城1号楼918号",
+		"HousePaperNo": "桂(1231)南宁市不动产权第1231231号",
+		"Owners": [{
+			"Name": "刘淼",
+			"IDType": "身份证",
+			"PersonNo": "450103196807240028",
+			"MobileNo": "",
+			"CertNo": "邕房权证字第02780045号",
+			"RoleName": "权利人",
+			"OwnerType": "个人",
+			"Keeper": false
+		}],
+		"Success": true,
+		"ErroMessage": null,
+		"CurrentMortgageInfo": null,
+		"SalesInfo": null,
+		"ParcelCert": null
+	}
+}

@@ -1,0 +1,135 @@
+<app-navbar></app-navbar>
+<div class="intro-relative ms-hero-img-airplane ms-hero-bg-royal color-white" id="home">
+  <div class="intro-relative-content index-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="text-center mb-4">
+            <img class="ms-logo ms-logo-lg ms-logo-white center-block mb-2 mt-2 animated zoomInDown animation-delay-5"
+                 src="assets/img/logo.png"/>
+            <h1
+              class="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">
+              南宁市不动产登记综合
+              <span>服务平台</span>
+            </h1>
+            <p
+              class="hidden-sm lead lead-lg color-white center-block mt-2 mb-2 mw-800 text-uppercase fw-300 animated fadeInUp animation-delay-7">
+              为进一步提升
+
+              <span class="color-warning">不动产登记服务水平</span>，方便市民咨询、办理各项不动产业务， 我们在此为广大群众提供在线服务，欢迎大家使用，并对我们的服务提出宝贵的意见。
+            </p>
+            <div class="text-center ms-margin mb-4">
+
+              <a href="javascript:void(0)"
+                 class="btn btn-white color-primary btn-raised btn-app wow zoomInUp animation-delay-3">
+                <div class="btn-container">
+                  <i class="fa fa-android"></i>
+                  <span>Aviable in </span>
+                  <br>
+                  <strong>Play Store</strong>
+                </div>
+              </a>
+              <a href="javascript:void(0)"
+                 class="btn btn-white color-primary btn-raised btn-app wow zoomInUp animation-delay-2">
+                <div class="btn-container">
+                  <i class="fa fa-apple"></i>
+                  <span>Aviable in </span>
+                  <br>
+                  <strong>App Store</strong>
+                </div>
+              </a>
+            </div>
+            <!--<a href="javascript:void(0);" class="animated zoomInUp animation-delay-9 btn btn-raised btn-primary btn-xlg">
+                <i class="fa fa-apple"></i> 苹果
+            </a>
+            <a href="javascript:void(0);" class="animated zoomInUp animation-delay-11 btn btn-raised btn-success btn-xlg">
+                <i class="fa fa-android"></i> 安卓
+            </a>-->
+          </div>
+        </div>
+        <router-outlet></router-outlet>
+      </div>
+      <div class="text-center mb-2 mt-4 hidden-sm">
+        <a id="go-intro-fixed-next" href="javascript:void(0)"
+           class=" btn-circle btn-circle-raised btn-circle-white animated zoomInUp animation-delay-12">
+          <i class="zmdi zmdi-long-arrow-down"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--<div class="btn-back-top">-->
+  <!--<a href="#" data-scroll id="back-top" class="btn-circle btn-circle-primary btn-circle-sm btn-circle-raised ">-->
+    <!--<i class="zmdi zmdi-long-arrow-up"></i>-->
+  <!--</a>-->
+<!--</div>-->
+<div class="bg-light index-1 intro-fixed-next pt-6">
+  <div class="container" id="intro-next">
+    <h2 class="text-center color-primary mb-2 wow fadeInDown animation-delay-4">我们的服务</h2>
+    <p class="lead text-center aco wow fadeInDown animation-delay-5 mw-800 center-block mb-4">
+      为进一步提升
+      <span class="color-primary">不动产登记服务水平</span> ，方便市民咨询、办理各项不动产业务我们提供以下服务
+    </p>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card card-info animated zoomInUp animation-delay-5">
+          <div class="bg-info">
+            <img src="assets/img/demo/m1.png" alt="..." class="img-avatar-circle">
+          </div>
+          <div class="card-block pt-4 text-center">
+            <h4 class="color-info">办理业务</h4>
+            <p>在线办理不动产登记业务</p>
+            <a routerLink="yewu" class="btn btn-info">
+              <i class="zmdi zmdi-star"></i> 点击办理
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-danger animated zoomInUp animation-delay-6">
+          <div class="bg-danger">
+            <img src="assets/img/demo/m2.png" alt="..." class="img-avatar-circle">
+          </div>
+          <div class="card-block pt-4 text-center">
+            <h4 class="color-danger">进度查询</h4>
+            <p>能实时了解您的业务办理进度</p>
+            <a href="http://test.nngeo.com/home/query" target="_blank" class="btn btn-danger">
+              <i class="zmdi zmdi-star"></i> 点击查询
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-warning animated zoomInUp animation-delay-7">
+          <div class="bg-warning">
+            <img src="assets/img/demo/m3.png" alt="..." class="img-avatar-circle">
+          </div>
+          <div class="card-block pt-4 text-center">
+            <h4 class="color-warning">办事指南</h4>
+            <p>了解各个业务办理流程</p>
+            <a href="http://www.nnland.gov.cn:9000/index.php?m=content&c=index&a=lists&catid=11" target="_blank"
+               class="btn btn-warning">
+              <i class="zmdi zmdi-star"></i> 点击查看
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-success animated zoomInUp animation-delay-8">
+          <div class="bg-success">
+            <img src="assets/img/demo/m4.png" alt="..." class="img-avatar-circle">
+          </div>
+          <div class="card-block pt-4 text-center">
+            <h4 class="color-success">个人中心</h4>
+            <p>管理您的业务及个人信息</p>
+            <a routerLink="person" class="btn btn-success">
+              <i class="zmdi zmdi-star"></i> 点击进入
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--<app-foot></app-foot>-->
+</div>
+
